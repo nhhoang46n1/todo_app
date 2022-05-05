@@ -22,8 +22,8 @@ class TodoItem extends Component {
           </Col>
           <Col>
             <Row>
-              <Col sm={8} md={8} lg={8}></Col>
-              <Col sm={2} md={2} lg={2}>
+              <Col xs={8} sm={8} md={8} lg={8}></Col>
+              <Col xs={2} sm={2} md={2} lg={2}>
                 <button
                   className={
                     editItem
@@ -36,7 +36,7 @@ class TodoItem extends Component {
                   <i className="fa-solid fa-pen-to-square"></i>
                 </button>
               </Col>
-              <Col sm={2} md={2} lg={2}>
+              <Col xs={2} sm={2} md={2} lg={2}>
                 <button
                   className="text-danger btn-action"
                   onClick={handleDelete}
