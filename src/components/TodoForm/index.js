@@ -24,8 +24,9 @@ class TodoForm extends Component {
     return (
       <Form onSubmit={handleSubmit} className="form-container">
         <FormGroup className="mb-4">
-          <FormLabel className=" fw-bolder">Title Task</FormLabel>
+          <FormLabel className="fs-4 fw-bolder">Title Task</FormLabel>
           <FormControl
+            className="form-control"
             type="text"
             placeholder="Enter my task"
             name="titleTask"
@@ -36,7 +37,7 @@ class TodoForm extends Component {
         </FormGroup>
 
         <FormGroup className="mb-4">
-          <FormLabel className="fw-bolder">Date</FormLabel>
+          <FormLabel className="fs-4 fw-bolder">Date</FormLabel>
           <FormControl
             type="date"
             name="date"
@@ -47,7 +48,7 @@ class TodoForm extends Component {
         </FormGroup>
 
         <FormGroup className="mb-4">
-          <FormLabel className="fw-bolder">Time</FormLabel>
+          <FormLabel className="fs-4 fw-bolder">Time</FormLabel>
           <FormControl
             type="time"
             name="time"

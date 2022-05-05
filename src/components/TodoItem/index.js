@@ -4,7 +4,8 @@ import "./style.css";
 
 class TodoItem extends Component {
   render() {
-    const { titleTask, date, time, handleDelete, handleEdit } = this.props;
+    const { titleTask, date, time, handleDelete, handleEdit, editItem } =
+      this.props;
 
     return (
       <ListGroupItem className="list-group">
@@ -21,22 +22,27 @@ class TodoItem extends Component {
           </Col>
           <Col>
             <Row>
-              <Col sm md lg={10}></Col>
-              <Col sm md lg={1}>
-                <span className="text-success">
-                  <i
-                    className="fa-solid fa-pen-to-square edit-btn "
-                    onClick={handleEdit}
-                  ></i>
-                </span>
+              <Col sm md lg={8}></Col>
+              <Col sm md lg={2}>
+                <button
+                  className={
+                    editItem
+                      ? "text-secondary btn-action"
+                      : "text-success btn-action"
+                  }
+                  disabled={editItem ? true : false}
+                  onClick={handleEdit}
+                >
+                  <i className="fa-solid fa-pen-to-square"></i>
+                </button>
               </Col>
-              <Col sm md lg={1}>
-                <span className="text-danger">
-                  <i
-                    className="fa-solid fa-trash-can delete-btn"
-                    onClick={handleDelete}
-                  ></i>
-                </span>
+              <Col sm md lg={2}>
+                <button
+                  className="text-danger btn-action"
+                  onClick={handleDelete}
+                >
+                  <i className="fa-solid fa-trash-can delete-btn"></i>
+                </button>
               </Col>
             </Row>
           </Col>

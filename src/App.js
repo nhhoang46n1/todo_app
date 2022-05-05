@@ -86,8 +86,12 @@ class App extends Component {
     return (
       <>
         <Nav />
-
         <Container className="text-center mt-4">
+          <img
+            src="https://cutewallpaper.org/21/todo-list-wallpaper/6-Steps-to-Finish-Your-To-Do-List-Grant-Cardone-TV.jpg"
+            alt=""
+            className="img-content"
+          ></img>
           <Row>
             <Col></Col>
             <Col>
@@ -113,6 +117,7 @@ class App extends Component {
                 clearList={this.clearList}
                 handleDelete={this.handleDelete}
                 handleEdit={this.handleEdit}
+                editItem={this.state.editItem}
               />
             </Col>
             <Col xs md lg={2}></Col>
