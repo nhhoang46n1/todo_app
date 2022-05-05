@@ -13,12 +13,12 @@ class TodoList extends Component {
       <Card style={{ width: "100%" }} className="card mt-4">
         <CardHeader>
           <Row>
-            <Col sm md lg={10}>
+            <Col xs={10} sm={10} md={10} lg={10}>
               <span className="fw-bolder fs-6 d-flex justify-content-start fst-italic text-secondary">
                 My Tasks
               </span>
             </Col>
-            <Col sm md lg={2}>
+            <Col xs={2} sm={2} md={2} lg={2}>
               <span className="fw-bolder fs-6 d-flex justify-content-center fst-italic text-secondary">
                 Action
               </span>

@@ -110,8 +110,8 @@ class App extends Component {
           </Row>
 
           <Row>
-            <Col sm md lg={2}></Col>
-            <Col sm md lg={8}>
+            <Col sm={2} md={2} lg={2}></Col>
+            <Col xs={12} sm={8} md={8} lg={8}>
               <TodoList
                 items={this.state.items}
                 clearList={this.clearList}
@@ -120,7 +120,7 @@ class App extends Component {
                 editItem={this.state.editItem}
               />
             </Col>
-            <Col xs md lg={2}></Col>
+            <Col sm={2} md={2} lg={2}></Col>
           </Row>
         </Container>
       </>
